@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">tracker</string>
+    <string name="DBalert">The Database was empty</string>
+</resources>

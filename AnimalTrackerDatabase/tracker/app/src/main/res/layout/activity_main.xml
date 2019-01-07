@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout1">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:hint="Animal name"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:hint="How many you saw"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:hint="When did you see them"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="250dp"
+            android:hint="Any comments"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnView"
+            android:text="View Data"
+            android:layout_toRightOf="@id/btnAdd"/>
+
+        <Button
+            android:id="@+id/btnShowLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/btnView"
+            android:text="Location" />
+    </RelativeLayout>
+</RelativeLayout>
